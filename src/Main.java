@@ -22,7 +22,7 @@ public class Main extends JFrame {
       setDoubleBuffered(true);
       addKeyListener(this);
       setFocusable(true);
-      stage = StageReader.buildStage("data/stage1.map");
+      stage = StageReader.buildStage("../data/stage1.map");
     }
 
     @Override
@@ -43,25 +43,31 @@ public class Main extends JFrame {
 
     // MouseClicked no longer used by this branch
     @Override
-    public void mouseClicked(MouseEvent e) {}
+    public void mouseClicked(MouseEvent e) {
+    }
 
     // Methods that are required by
     // implements MouseListener, KeyListener
     // but are unused by our application
     @Override
-    public void mousePressed(MouseEvent e) {}
+    public void mousePressed(MouseEvent e) {
+    }
 
     @Override
-    public void mouseReleased(MouseEvent e) {}
+    public void mouseReleased(MouseEvent e) {
+    }
 
     @Override
-    public void mouseEntered(MouseEvent e) {}
+    public void mouseEntered(MouseEvent e) {
+    }
 
     @Override
-    public void mouseExited(MouseEvent e) {}
+    public void mouseExited(MouseEvent e) {
+    }
 
     @Override
-    public void keyTyped(KeyEvent e) {}
+    public void keyTyped(KeyEvent e) {
+    }
   }
 
   final Canvas canvas;
@@ -83,7 +89,7 @@ public class Main extends JFrame {
   }
 
   public void run() {
-    while(true) {
+    while (true) {
       Instant startTime = Instant.now();
       canvas.repaint();
       Instant endTime = Instant.now();
